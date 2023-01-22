@@ -1,5 +1,5 @@
 ﻿Console.Clear();
-Console.WriteLine();
+Console.WriteLine("5. Написать программу вычисления произведения чисел от 1 до N.");
 Console.Write("Введите число: ");
 string writeN = Console.ReadLine();
 int number = int.Parse(writeN);
