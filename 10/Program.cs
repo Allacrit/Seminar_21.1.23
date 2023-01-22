@@ -1,8 +1,10 @@
 ﻿Console.Clear();
 Console.WriteLine("10. В одномерном массиве из 123 чисел найти количество элементов из отрезка [10,99].");
-int size = 123;
+int sizeArray = 123;
 int min = -100;
 int max = 200;
+
+PrintCountArray(FillArray(sizeArray, min, max));
 
 int[] FillArray(int size, int min, int max)
 {
@@ -24,8 +26,6 @@ void PrintCountArray(int[] arr)
         if (arr[i] >= 10 && arr[i] <= 99) count++;
     }
     Console.WriteLine();
-    Console.WriteLine($"Количество чисел из диапазона [10, 99] равно {count}");
+    Console.WriteLine($"Количество чисел из диапазона от 10 до 99 равно {count}.");
     Console.WriteLine();
 }
-
-PrintCountArray(FillArray(size, min, max));
